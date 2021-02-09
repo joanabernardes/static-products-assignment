@@ -5,8 +5,7 @@
     padding: 2rem; 
     background-color:dimgray;
     background: linear-gradient(55deg,dimgray 0%, #1fc8db 51%, #2ce845 85%);
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   main {
