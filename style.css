@@ -112,8 +112,30 @@ a{
 .card img{
     max-width:200px;
   
+}.single-card{
+   border-radius: 0%;
+  align-items: center;
+  justify-self: center;
+  display: flex;
+  border:  1px solid black;
+  border-radius: 1rem;
+  flex-wrap: wrap;
+  min-width: 200px;
+  max-width: 600px;
+
+}
+.card img{
+    max-width:200px;
+  
 }
 .card h3{
+    order:-1;
+}
+.single-card img{
+    max-width:400px;
+  
+}
+.single-card h1{
     order:-1;
 }
 
@@ -162,6 +184,13 @@ display: grid;
   grid-gap: 5px;
  
 }
+.single-content{
+display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-gap: 5px;
+ 
+}
+
 
 @media screen and (max-width: 700px) {
   .sidebar {
@@ -178,4 +207,9 @@ display: grid;
     text-align: center;
     float: none;
   }
+}
+
+/* //product.html */
+.grid-container{
+  max-width: 50px;
 }
