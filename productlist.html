@@ -4,26 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- style -->
     <link rel="stylesheet" href="style.css">
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    
+    <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+  <!-- Glidejs StyleSheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 </head>
-<body>   
-    
 
+<body class="productlist">
+  
+    <header class="page-header">
+      <h1>A wonderful webshop</h1>
+    </header>
+    
+    <main>
+    
 <div class="sidebar">
     <a class="active" href="#productlist.html">All products</a>
     <a href="#category.html">Categories</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
   </div>
+  <main>
   
-  <div class="content">
+<template id="cardTemplate">
     <article class="card">
         <h3>Item 1</h3>
+        <p class="subtle">Tshirts | Nike</p>
+<p class="price">DKK 1595, -</p>
         <img src="img/1542.webp" alt="">
+        <button><a href="#product.html">See More...</a></button>
+    </article>
+  </template>
+
+    <!-- <article class="card-onSale">
+        <h3>Item 1</h3>
+        <img src="img/1542.webp" alt="">
+        <div class="discounted">
+          <p>Now DKK 1560,-</p>
+          <p>-34%</p>
+        </div>
+        <button><a href="#product.html">See More...</a></button>
+    </article>
+
+    <article class="card-soldOut">
+        <h3>Item 1</h3>
+        <img src="img/1542.webp" alt="">
+        <div class="discounted">
+          <p>Sold Out</p>
+          <p>be notified when it's back</p>
+        </div>
+        
         <button><a href="#product.html">See More...</a></button>
     </article>
     <article class="card">
@@ -31,43 +71,10 @@
         <img src="img/1542.webp" alt="">
         <button><a href="#product.html">See More...</a></button>
     </article>
-    <article class="card">
-        <h3>Item 1</h3>
-        <img src="img/1542.webp" alt="">
-        <button><a href="#product.html">See More...</a></button>
-    </article>
-    <article class="card">
-        <h3>Item 1</h3>
-        <img src="img/1542.webp" alt="">
-        <button><a href="#product.html">See More...</a></button>
-    </article>
-    <article class="card">
-        <h3>Item 1</h3>
-        <img src="img/1542.webp" alt="">
-        <button><a href="#product.html">See More...</a></button>
-    </article>
-    <article class="card">
-        <h3>Item 1</h3>
-        <img src="img/1542.webp" alt="">
-        <button><a href="#product.html">See More...</a></button>
-    </article>
-    <article class="card">
-        <h3>Item 1</h3>
-        <img src="img/1542.webp" alt="">
-        <button><a href="#product.html">See More...</a></button>
-    </article>
-    <article class="card">
-        <h3>Item 1</h3>
-        <img src="img/1542.webp" alt="">
-        <button><a href="#product.html">See More...</a></button>
-    </article>
-    <article class="card">
-        <h3>Item 1</h3>
-        <img src="img/1542.webp" alt="">
-        <button><a href="#product.html">See More...</a></button>
-    </article>
-  </div>
-  
+    -->
+
+</main>
+<script src="productlist.js"></script>
 
 </body>
 </html>
