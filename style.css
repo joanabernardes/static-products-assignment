@@ -14,13 +14,17 @@ header.page-header {
     min-width: 120px;
     align-items: center;
     color: #fff;
-    text-shadow: #000 0 0 .2em;
+    margin: 20px;
 }
 
 header.page-header > h1 {
     font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', cursive,
         fantasy;
-    margin: 2%;
+    margin: 1%;
+}
+.page-header .sidebar{
+  padding: 10px;
+  margin: 10px;
 }
 
 main {
@@ -95,13 +99,16 @@ article > button:hover{
       }
 
   
-.sale-item img{
-    max-width:200px;
-}
+
 
 a{
     color: white;
     text-decoration: none;
+}
+.subtle{
+  color: #555;
+  font-size: 12px;
+  margin: 10px;
 }
 
 .description > button{
@@ -146,16 +153,33 @@ a{
  flex-wrap: wrap;
  min-width: 200px;
 
+
 }
 .card-onSale img{
   max-width:200px;
   border: 3px dashed red;
-
+  display: inline-block; 
+}
+.card-onSale:before {
+  position: absolute;
+  background-color: #ff0000;
+  content: 'SALE';
+  text-align: center;
+  color: #ffffff;
+  margin-top: 5em;
+  margin-left: 175px;
+  /* making it a circle */
+  border-radius: 9999px;
+  height: 1em;
+  padding: 1em;
+  line-height: 0.4em;
 }
 .card-onSale h3{
   order:-1;
+  text-align: center;
+  min-height: 20px;
 }
-body article .discounted,
+/* body article .discounted,
 body article .price span {
   display: none;
 }
@@ -170,11 +194,10 @@ body article.card-onSale .price span {
 .discounted p:last-child {
   background: var(--off-color);
   text-align: center;
-}
-.card-onSale h3{
-  text-align: center;
-}
+} */
 
+
+…
 
 /* sold out */
 .card-soldOut{
@@ -189,7 +212,20 @@ body article.card-onSale .price span {
 }
 .card-soldOut img{
   max-width:200px;
-  opacity: 0.7;
+  opacity: 0.5;
+}
+.card-soldOut:before {
+  position: absolute;
+  content: 'Sold out';
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10em;
+  margin-left: 0.5em;
+  /* making it a circle */
+  border-radius: 9999px;
+  height: 1em;
+  padding: 1em;
+  line-height: 0.4em;
 }
 
 .card-soldOut h3{
@@ -214,17 +250,14 @@ body article.card-soldOut p{
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 200px;
   background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
+  position:relative;
+  width: 100%;
 }
 
 .sidebar a {
   display: block;
   color: black;
-  padding: 16px;
   text-decoration: none;
 }
  
@@ -297,4 +330,9 @@ display: grid;
  min-width: 200px;
  max-width: 600px;
 
+}
+
+/* category.html */
+.category-group img{
+  max-width:200px;
 }
