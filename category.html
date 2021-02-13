@@ -7,30 +7,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="page-header">
+    <h1>A wonderful webshop</h1>
+    <div class="sidebar">
+      <a class="active" href="#productlist.html">All products</a>
+      <a href="#category.html">Categories</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+  </header>
+  <h1>Categories</h1>
+  <main>
 
-<div class="sidebar">
-  <a href="#productlist.html">All products</a>
-  <a class="active" href="#category.html">Categories</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
-
-<h1>Categories</h1>
-<div class="content">
-      <article class="sale-item">
-        <h1>Clothing</h1>
+<!-- <div class="cardTemplate">
+      <article class="card" id="clothing">
+        <h2>Clothing</h2>
         <p>This is the best computer money can buy, if you don’t have much money.</p>
         <ul>
-          <li>Computer</li>
-          <li>Monitor</li>
-          <li>Keyboard</li>
-          <li>Mouse</li>
+          <li><a href="productlist.html"></a>Tops</li>
+          <li><a href="productlist.html"></a>Bottoms</li>
+          <li><a href="productlist.html"></a>Outerwear</li>
         </ul>
         <img src="img/1165.webp" alt="Woman with a white V cut shirt and a thin black carding">
         <button><a href="product.html">See More...</a></button>
-      </article>
+      </article> -->
+
+      <template>
+        <li><a href="productlist.html"></a>Tops</li>
+      </template>
+      <div class="cardTemplate">
+      <article class="card" id="clothing">
+        <!-- <h2>Clothing</h2>
+        <p>This is the best computer money can buy, if you don’t have much money.</p> -->
+        <ul></ul>
+        <img src="img/1165.webp" alt="Woman with a white V cut shirt and a thin black carding">
+        <button><a href="product.html">See More...</a></button>
+      </article> 
       
-      <article class="sale-item">
+     
+
+      <!-- <article class="sale-item">
         <h1>Acessories</h1>
         <p>Only capable of printing ASCII art.</p>
         <ul>
@@ -71,13 +87,13 @@
         <img src="img/1550.webp"
              alt="Football ball.">
              <button><a href="product.html">See More...</a></button>
-      </article>
+      </article> -->
     </div>
-     
+  </main>
+  <script src="js/category.js"></script>
   </body>
         
 
 
 
-</html>
 </html>
