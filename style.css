@@ -6,6 +6,7 @@
     background-color:dimgray;
     background: linear-gradient(55deg,dimgray 0%, #1fc8db 51%, #2ce845 85%);
     font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
   }
 header.page-header {
     background-color: rgb(41, 53, 61);
@@ -20,18 +21,17 @@ header.page-header {
 header.page-header > h1 {
     font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', cursive,
         fantasy;
-    margin: 1%;
+    margin: 6rem;
+    text-align: center;
+    
 }
 .page-header .sidebar{
   padding: 10px;
-  margin: 10px;
+  margin: 20px;
 }
 
 main {
-    font: 1rem 'Fira Sans', sans-serif;
-}
-
-  main {
+  font-family: 'Ubuntu', sans-serif;
     max-width: 500px;
     margin: 0 auto; }
   
@@ -57,13 +57,21 @@ main {
   
   article > img {
     order: -1;
-    align-self: center; }
+    align-self: center; 
+  max-width: 350px;
+}
   
   article > h1 {
     margin: 1rem 1rem 0; }
   
   article > ul {
-    margin: 0 0 1rem; }
+    margin: 2rem; 
+    list-style: none;
+  }  
+  article > ul > li{
+    margin: 2rem;
+    font-size: 30px;
+  }
   
   article > p {
     margin: 0.25em 1rem 1rem; }
@@ -259,6 +267,7 @@ body article.card-soldOut p{
   display: block;
   color: black;
   text-decoration: none;
+  margin: 0.5px 5px 0.5px 5px;
 }
  
 .sidebar a.active {
@@ -284,9 +293,12 @@ display: grid;
  
 }
 .single-content{
-display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  grid-gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+  
  
 }
 
@@ -324,8 +336,6 @@ display: grid;
  align-items: center;
  justify-self: center;
  display: flex;
- border:  1px solid black;
- border-radius: 1rem;
  flex-wrap: wrap;
  min-width: 200px;
  max-width: 600px;
@@ -334,5 +344,64 @@ display: grid;
 
 /* category.html */
 .category-group img{
-  max-width:200px;
+  min-width:80%;
+}
+
+/* product.html */
+.product-card img{
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.product-card{
+  grid-area: 1 / 1 / 3 / 2;
+}
+article .single-card{
+border:0px;
+}
+.purchaseBox {
+  background: #d8d8d8;
+  color: var(--background-color);
+  padding: 1rem;
+  max-height: 300px;
+  grid-area: 2 / 2 / 3 / 3;
+}
+.info {
+  padding: 1rem;
+  background-color: white;
+  max-height: 450px;
+  grid-area: 1 / 2 / 2 / 3;
+}
+.product select {
+  min-width: 100px;
+}
+.product main {
+  display: grid;
+}
+.product main img {
+  grid-column: 1/-1;
+}
+.purchaseBox form label {
+  gap: 1rem;
+}
+.purchaseBox button {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+dt {
+  font-weight: 700;
+}
+@media screen and (min-width: 1000px) {
+  .product main {
+    grid-template-columns: 1fr 310px;
+  }
+  .info {
+    order: 0;
+  }
+  .purchaseBox {
+    order: 2;
+    grid-area: "size";
+  }
 }
