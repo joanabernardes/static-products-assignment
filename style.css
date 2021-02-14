@@ -13,12 +13,15 @@
     padding: 2rem;
     font-size: 60px;
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
   }
+
 
 header.page-header {
     background-color: rgb(41, 53, 61);
+    border: white 3px solid;
     display: flex;
-    height: 120px;
+    height: 150px;
     min-width: 120px;
     align-items: center;
     color: #fff;
@@ -60,7 +63,8 @@ main {
   article {
     display: flex;
     flex-flow: column;
-    padding: 2rem; }
+    padding: 2rem;
+    font-family: 'Ubuntu', sans-serif; }
   
   article > img {
     order: -1;
@@ -88,24 +92,61 @@ main {
     justify-content: center;
    
   }  
+
+
   article > ul > li{
     margin: 2rem;
     font-size: 30px;
     
   } 
  .category-card ul > li{
-    margin: 2rem;
-    font-size: 30px;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 2rem;
     border-radius: 2000px;
+      color: rgb(195, 71, 233);
+      display: block;
+      margin: 100px auto;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: 0.3s;
+      width: 300px;
+  }
+  .category-card ul > li:after {
+      content: "";
+      background-color: rgb(195, 71, 233);
+      display: block;
+      height: 0;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transition: .5s;
+      width: 0;
+      z-index:-1;
+  }
+  .category-card ul > li:hover {
+      border-color: rgb(0, 0, 0);
+      color: #FFFFFF;
+  }
+  .category-card ul > li:hover:after {
+    background: linear-gradient(55deg,rgb(196, 105, 219) 0%, #1fc8db 51%, #29ff45 85%);
+      border-radius: 100px;
+      height: 120%;
+      left: -21px;
+      top: -6px;
+      width: 120%;
+  }
   }
   
   article > p {
-    margin: 0.25em 1rem 1rem; }
+    margin: 0.25em 1rem 1rem; 
+    font-family: 'Ubuntu', sans-serif;}
   
   main {
-    font-size: 20px; }
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif; }
   
   article {
     border: 1px solid black;
@@ -141,6 +182,11 @@ a{
     color: white;
     text-decoration: none;
 }
+.category-card a{
+    color:black;
+    text-decoration: none;
+}
+
 .subtle{
   color: #555;
   font-size: 12px;
@@ -155,7 +201,8 @@ a{
     padding: 0.5rem;
     border: solid;
     border-radius: 0.4rem;
-    font-size: 1.2rem; }
+    font-size: 1.2rem; 
+    font-family: 'Ubuntu', sans-serif;}
 
     /* normal card */
 .card{
@@ -170,12 +217,14 @@ a{
 }
 .card img{
   max-width:200px;
+  font-family: 'Ubuntu', sans-serif;
 }
 .card h3{
   order:-1;
   text-align: center;
   font-size: 20px;
   min-height: 40px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -214,6 +263,7 @@ a{
   order:-1;
   text-align: center;
   min-height: 40px;
+  font-family: 'Ubuntu', sans-serif;
 }
 /* body article .discounted,
 body article .price span {
@@ -290,6 +340,7 @@ body article.card-soldOut p{
   background-color: #f1f1f1;
   position:relative;
   width: 100%;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .sidebar a {
@@ -376,6 +427,11 @@ justify-items: center;
 /* category.html */
 .category-group img{
   min-width:80%;
+}
+
+span{
+  font-size: 30px;
+  text-decoration: underline;
 }
 
 /* product.html */
